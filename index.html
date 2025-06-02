@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>See 'N' Say Storymaker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+  <h2>Click the buttons to create a funny sentence using these wild characters!</h2>
+  <p>Click the "Random Sentence!" button to generate a random sentence.<br>
+     Click the "Reset" button to start over again.</p>
+
+  <div class="button-row">
+    <div class="part">
+      <button class="btn purple" onclick="showOptions('subject')">Subject</button>
+      <div id="subject-options" class="options-container"></div>
+    </div>
+    <div class="part">
+      <button class="btn blue" onclick="showOptions('verb')">Verb</button>
+      <div id="verb-options" class="options-container"></div>
+    </div>
+    <div class="part">
+      <button class="btn green" onclick="showOptions('adj')">Adjective</button>
+      <div id="adj-options" class="options-container"></div>
+    </div>
+    <div class="part">
+      <button class="btn orange" onclick="showOptions('animal')">Animal</button>
+      <div id="animal-options" class="options-container"></div>
+    </div>
+    <div class="part">
+      <button class="btn pink" onclick="showOptions('place')">Place</button>
+      <div id="place-options" class="options-container"></div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn surprise" onclick="randomSentence()">Random sentence!</button>
+    <button class="btn reset" onclick="resetSentence()">Reset</button>
+    
+  </div>
+
+  <div class="output" id="sentenceBox">
+    Click a button to start the game!
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
