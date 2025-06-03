@@ -49,4 +49,11 @@ function resetSentence() {
   document.querySelectorAll(".options-container").forEach(div => div.innerHTML = "");
 }
 
+function playSentence() {
+  const sentence = document.getElementById("sentenceBox").innerText;
+  if (sentence && sentence !== "Click a button to start the game!") {
+    const speech = new SpeechSynthesisUtterance(sentence);
+    speechSynthesis.speak(speech);
+  }
+}
 
